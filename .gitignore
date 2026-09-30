@@ -1,0 +1,31 @@
+# =============================================================================
+# DATA FILES -- NEVER commit these. MIMIC-IV/MIMIC-IV-ED data is credentialed
+# (PhysioNet DUA prohibits redistribution); ICBHI raw audio is large and
+# regenerable from the public source, not code.
+# =============================================================================
+*.csv
+*.wav
+*.npz
+*.npy
+
+# Model checkpoints -- kept out by default; only remove this line and commit
+# specific model files if you've explicitly confirmed this is appropriate
+# beyond the DUA's "contribute the code" requirement.
+*.pt
+*.pth
+*.pkl
+*.h5
+
+# Logs from CHUI job runs (may reference file paths/usernames; not code)
+*.log
+*.err
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS/editor clutter
+.DS_Store
+Thumbs.db
+.vscode/
